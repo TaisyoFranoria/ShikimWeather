@@ -19,5 +19,11 @@ if(wd.getDate(0)=='None' or wd.getWeathers(order)=='None'):
     Say = '何もみえないよ。'
 #Say = '天気予報機能は現在メンテナンス中だよ'
 Num = str(random.randint(0,1))
-sp.Popen(['./ShikimiShellArt.sh',Num,Say],cwd=os.getcwd())
+
+#Python3;.9~
+#dirname=os.path.dirname(__file__)
+#Python~3.8
+dirname=os.path.dirname(os.path.abspath(__file__))
+shellpath=dirname+'/ShikimiShellArt.sh'
+sp.Popen([shellpath,Num,Say],cwd=dirname)
 
