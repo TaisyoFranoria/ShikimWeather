@@ -18,6 +18,6 @@ if [ ! -e ${WORK_DIR}/${DAYRY_DATAFILE} ];then
     fi
 fi
 
-${SCRIPT_DIR}/ShikimiShellArt.sh 0 $(cat ${WORK_DIR}/${DAYRY_DATAFILE})
+${SCRIPT_DIR}/../ShikimiShellArt.sh 0 $(cat ${WORK_DIR}/${DAYRY_DATAFILE})
 
 
